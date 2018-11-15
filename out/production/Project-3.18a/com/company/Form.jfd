@@ -1,0 +1,92 @@
+JFDML JFormDesigner: "6.0.4.1.172" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {par l {seq l {space :p:119:p, comp frs:::p::p, space :p:190:p, comp milskhake:::p::p}, seq l {space :p:138:p, comp Americanio:::p::p}, seq l {space :p:163:p, comp Capuccino:::p::p}, seq l {space :p:183:p, comp orange:::p::p}}, space ::214:x}, seq t {space :0:299:x, par l {seq t {comp apple:::p::p, space :p:302:p}, seq t {comp frappe:::p::p, space :p:223:p}, seq t {comp tea:::p::p, space :p:169:p}, seq t {comp Fcap:::p::p, space :p:184:p}, seq t {comp Hamericano:::p::p, space :p:206:p}}}}"
+					"$verticalGroup": "par l {seq l {par l {seq {space :p:30:p, comp frs:::p::p}, seq l {space :p:52:p, comp milskhake:::p::p}}, space :p:35:p, comp Americanio:::p::p, space :::p, comp apple:::p::p, space :p:7:p, comp tea:::p::p, space :p:23:p, comp Capuccino:::p::p, space :p:24:p, comp Fcap:::p::p, space s:::p, comp frappe:::p::p, space :p:3:p, comp orange:::p::p, space :p:35:p, comp Hamericano:::p::p, space ::124:x}}"
+				} ) {
+					name: "Panel"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "frs"
+						"text": "1.80"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "frsActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Americanio"
+						"text": "text"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Capuccino"
+						"text": "text"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "orange"
+						"text": "text"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "apple"
+						"text": "text"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "appleActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "frappe"
+						"text": "text"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "frappeActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "milskhake"
+						"text": "text"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "milskhakeActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "tea"
+						"text": "text"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "teaActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Fcap"
+						"text": "text"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "FcapActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "Hamericano"
+						"text": "text"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "HamericanoActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": "OK"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 705, 700 )
+		} )
+	}
+}
