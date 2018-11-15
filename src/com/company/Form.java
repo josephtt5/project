@@ -50,11 +50,33 @@ public class Form extends JFrame {
         price = 1.80;
         sum=sum+price;
     }
+    private void frsActionPerformed(ActionEvent e) {
+        // TODO add your code here
+        price = 1.80;
+        sum=sum+price;
 
+    }
+
+    private void AmericanioActionPerformed(ActionEvent e) {
+        price = 1.50;
+        sum=sum+price;
+    }
+
+    private void CapuccinoActionPerformed(ActionEvent e) {
+        // TODO add your code here
+        price = 2.50;
+        sum=sum+price;
+    }
+
+    private void orangeActionPerformed(ActionEvent e) {
+        // TODO add your code here
+        price  = 3.00;
+        sum=sum+price;
+    }
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
-        // Generated using JFormDesigner Evaluation license - joseph tsoutsouki
+        // Generated using JFormDesigner Evaluation license - totis96
         dialogPane = new JPanel();
         Panel = new JPanel();
         frs = new JButton();
@@ -220,7 +242,7 @@ public class Form extends JFrame {
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - joseph tsoutsouki
+    // Generated using JFormDesigner Evaluation license - totis96
     private JPanel dialogPane;
     private JPanel Panel;
     private JButton frs;
