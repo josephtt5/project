@@ -93,11 +93,22 @@ public class Form extends JFrame {
     }
 
        private void DeliveryItemStateChanged(ItemEvent e) {
+
         price  = 2.00;
         sum=sum+price;
         summ.setText(String.valueOf(sum));
         informations.append("Delivery\n");
+
     }
+
+    private void CheckoutAction(ActionEvent e) {
+        String address= JOptionPane.showInputDialog(null, "What is your address?", null);
+        System.out.println(address);    }
+
+
+
+
+
 
 
 
@@ -137,6 +148,7 @@ public class Form extends JFrame {
         scrollPane1 = new JScrollPane();
         informations = new JTextArea();
         Delivery = new JCheckBox();
+        button1 = new JButton();
         buttonBar = new JPanel();
         okButton = new JButton();
 
@@ -209,6 +221,10 @@ public class Form extends JFrame {
                 Delivery.setText("Delivery");
                 Delivery.addItemListener(e -> DeliveryItemStateChanged(e));
 
+                //---- button1 ----
+                button1.setText("Checkout");
+                button1.addActionListener(e -> CheckoutAction(e));
+
                 GroupLayout PanelLayout = new GroupLayout(Panel);
                 Panel.setLayout(PanelLayout);
                 PanelLayout.setHorizontalGroup(
@@ -222,19 +238,19 @@ public class Form extends JFrame {
                                             .addComponent(frs))
                                         .addGroup(PanelLayout.createSequentialGroup()
                                             .addGap(31, 31, 31)
-                                            .addComponent(summ, GroupLayout.PREFERRED_SIZE, 93, GroupLayout.PREFERRED_SIZE)))
-                                    .addGap(190, 190, 190)
+                                            .addComponent(summ, GroupLayout.PREFERRED_SIZE, 93, GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(PanelLayout.createSequentialGroup()
+                                            .addGap(100, 100, 100)
+                                            .addComponent(Americano)))
+                                    .addGap(327, 327, 327)
                                     .addComponent(milskhake))
                                 .addGroup(PanelLayout.createSequentialGroup()
                                     .addGap(163, 163, 163)
                                     .addComponent(Capuccino))
                                 .addGroup(PanelLayout.createSequentialGroup()
                                     .addGap(183, 183, 183)
-                                    .addComponent(orange))
-                                .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(100, 100, 100)
-                                    .addComponent(Americano)))
-                            .addContainerGap(214, Short.MAX_VALUE))
+                                    .addComponent(orange)))
+                            .addContainerGap(77, Short.MAX_VALUE))
                         .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                             .addGap(0, 378, Short.MAX_VALUE)
                             .addGroup(PanelLayout.createParallelGroup()
@@ -260,7 +276,9 @@ public class Form extends JFrame {
                                         .addGroup(PanelLayout.createSequentialGroup()
                                             .addGap(97, 97, 97)
                                             .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 98, GroupLayout.PREFERRED_SIZE)
-                                            .addContainerGap(269, Short.MAX_VALUE))))
+                                            .addGap(79, 79, 79)
+                                            .addComponent(button1)
+                                            .addContainerGap(112, Short.MAX_VALUE))))
                                 .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(tea)
                                     .addGap(169, 169, 169))))
@@ -271,9 +289,14 @@ public class Form extends JFrame {
                             .addGap(180, 180, 180)
                             .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(11, 11, 11)
-                                    .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(PanelLayout.createParallelGroup()
+                                        .addGroup(PanelLayout.createSequentialGroup()
+                                            .addGap(11, 11, 11)
+                                            .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                            .addComponent(button1)
+                                            .addGap(88, 88, 88)))
                                     .addComponent(milskhake))
                                 .addGroup(PanelLayout.createSequentialGroup()
                                     .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 97, GroupLayout.PREFERRED_SIZE)
@@ -341,6 +364,7 @@ public class Form extends JFrame {
     private JScrollPane scrollPane1;
     private JTextArea informations;
     private JCheckBox Delivery;
+    private JButton button1;
     private JPanel buttonBar;
     private JButton okButton;
     // JFormDesigner - End of variables declaration  //GEN-END:variables

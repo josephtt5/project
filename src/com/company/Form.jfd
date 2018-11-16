@@ -9,8 +9,8 @@ new FormModel {
 				name: "dialogPane"
 				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq {par l {seq l {par l {seq {space :p:119:p, comp frs:::p::p}, seq l {space :p:31:p, comp summ:::p:93:p}}, space :p:190:p, comp milskhake:::p::p}, seq l {space :p:163:p, comp Capuccino:::p::p}, seq l {space :p:183:p, comp orange:::p::p}, seq l {space :p:100:p, comp Americano:::p::p}}, space ::214:x}, seq t {space :0:378:x, par l {seq t {comp frappe:::p::p, space :p:223:p}, seq t {comp Fcap:::p::p, space :p:184:p}, seq t {comp Hamericano:::p::p, space :p:206:p}}}, seq t {space :p:72:p, par l {seq t {comp scrollPane1:::p:143:p, par l {seq {space ::84:x, comp apple:::p::p, space :p:302:p}, seq l {space :p:97:p, comp Delivery:::p:98:p, space ::269:x}}}, seq t {comp tea:::p::p, space :p:169:p}}}}"
-					"$verticalGroup": "par l {seq l {space :p:180:p, par t:::p {seq {space :p:11:p, comp Delivery:::p:28:p, space :::x, comp milskhake:::p::p}, seq {comp scrollPane1:::p:97:p, space :::p, comp frs:::p::p, space u:::p, comp summ:::p::p}}, space :p:18:p, comp Americano:::p::p, space :::p, comp apple:::p::p, space :p:7:p, comp tea:::p::p, space :p:75:p, comp Capuccino:::p::p, space :p:24:p, comp Fcap:::p::p, space s:::p, comp frappe:::p::p, space :p:3:p, comp orange:::p::p, space :p:35:p, comp Hamericano:::p::p, space :::x}}"
+					"$horizontalGroup": "par l {seq {par l {seq l {par l {seq l {space :p:119:p, comp frs:::p::p}, seq l {space :p:31:p, comp summ:::p:93:p}, seq l {space :p:100:p, comp Americano:::p::p}}, space :p:327:p, comp milskhake:::p::p}, seq l {space :p:163:p, comp Capuccino:::p::p}, seq l {space :p:183:p, comp orange:::p::p}}, space ::77:x}, seq t {space :0:378:x, par l {seq t {comp frappe:::p::p, space :p:223:p}, seq t {comp Fcap:::p::p, space :p:184:p}, seq t {comp Hamericano:::p::p, space :p:206:p}}}, seq t {space :p:72:p, par l {seq t {comp scrollPane1:::p:143:p, par l {seq {space ::84:x, comp apple:::p::p, space :p:302:p}, seq l {space :p:97:p, comp Delivery:::p:98:p, space :p:79:p, comp button1:::p::p, space ::112:x}}}, seq t {comp tea:::p::p, space :p:169:p}}}}"
+					"$verticalGroup": "par l {seq l {space :p:180:p, par t:::p {seq {par l {seq {space :p:11:p, comp Delivery:::p:28:p, space :::x}, seq t {comp button1:::p::p, space :p:88:p}}, comp milskhake:::p::p}, seq {comp scrollPane1:::p:97:p, space :::p, comp frs:::p::p, space u:::p, comp summ:::p::p}}, space :p:18:p, comp Americano:::p::p, space :::p, comp apple:::p::p, space :p:7:p, comp tea:::p::p, space :p:75:p, comp Capuccino:::p::p, space :p:24:p, comp Fcap:::p::p, space s:::p, comp frappe:::p::p, space :p:3:p, comp orange:::p::p, space :p:35:p, comp Hamericano:::p::p, space :::x}}"
 				} ) {
 					name: "Panel"
 					add( new FormComponent( "javax.swing.JButton" ) {
@@ -77,6 +77,11 @@ new FormModel {
 						"text": "Delivery"
 						addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "DeliveryItemStateChanged", true ) )
 					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "Checkout"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CheckoutAction", true ) )
+					} )
 				}, new FormLayoutConstraints( class java.lang.String ) {
 					"value": "West"
 				} )
@@ -102,7 +107,7 @@ new FormModel {
 				"value": "South"
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 0, 0 )
+			"location": new java.awt.Point( 5, 0 )
 			"size": new java.awt.Dimension( 705, 700 )
 		} )
 	}
