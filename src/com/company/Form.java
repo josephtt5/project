@@ -11,18 +11,23 @@ import java.util.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
 
+import static javax.swing.GroupLayout.Alignment.TRAILING;
+
 /**
  * @author joseph tsoutsouki
  */
 public class Form extends JFrame {
-    public Form() {
-        initComponents();
-    }
+    public Form() {initComponents();}
+    int counter=0;
     double sum=0;
     double price=0;
-    int counter=0;
+
     Vector <String> v = new Vector();
-    //delete.setVisible(false);
+
+    int del;
+
+
+
     private void milskhakeActionPerformed(ActionEvent e) {
         price = 1.80;
         sum=sum+price;
@@ -63,8 +68,6 @@ public class Form extends JFrame {
         price = 1.80;
         sum=sum+price;
         summ.setText(String.valueOf(sum));
-        String name="Frappe";
-        v.add(name);
         informations.append("Frappe\n");
     }
 
@@ -75,6 +78,7 @@ public class Form extends JFrame {
         informations.append("Freddo Capuccino\n");
     }
     private void frsActionPerformed(ActionEvent e) {
+
         delete.setVisible(true);
         price = 1.80;
         sum=sum+price;
@@ -116,51 +120,104 @@ public class Form extends JFrame {
        private void DeliveryItemStateChanged(ItemEvent e) {
 
         price  = 2.00;
-        if(counter%2==0)
-            sum=sum+price;
-        else
-            sum=sum-price;
+             if(counter%2==0) sum=sum+price;
+            else sum=sum-price;
+
         summ.setText(String.valueOf(sum));
         counter++;
+        del=1;
+
 
     }
 
     private void CheckoutAction(ActionEvent e) {
-        String address= JOptionPane.showInputDialog(null, "What is your address?", null);
-        System.out.println(address);}
-
-        private void deleteActionPerformed(ActionEvent e) {
-            // TODO add your code here
-            String name="Freddo Esspreso";
-            price=1.80;
-            sum=sum-price;
-            summ.setText(String.valueOf(sum));
-            int j=0;
-            informations.setText("");
-            String value = v.get(j);
-            while(value!=name) {
-                j++;
-                value=v.get(j);
-            }
-            v.set(j,"delete");
-           name=v.get(j);
-            for (int i = 0; i < v.size(); i++) {
-                value = v.get(i);
-               if(value!=name) {
-                   informations.append(value+"\n");
-               }
-            }
+        if (del == 1) {
+            JTextField address = new JTextField();
+            JTextField name = new JTextField();
+            JTextField surname = new JTextField();
+            JTextField email = new JTextField();
+            JTextField phone = new JTextField();
+            Object[] message = {
+                    "Name:", name,
+                    "Surname:", surname,
+                    "Address", address,
+                    "E-mail:", email,
+                    "Phone:", phone
+            };
 
 
+        JOptionPane.showConfirmDialog(null, message, "Informations", JOptionPane.OK_CANCEL_OPTION);
+
+
+        String name1 = name.getText();
+        String Sname1 = surname.getText();
+        String adrs = address.getText();
+        String eml = email.getText();
+        int phn = Integer.parseInt(phone.getText());
+    }
+        else {
+        JTextField name = new JTextField();
+        JTextField surname = new JTextField();
+        JTextField email = new JTextField();
+        JTextField phone = new JTextField();
+        Object[] message = {
+                "Name:", name,
+                "Surname:", surname,
+                "E-mail:", email,
+                "Phone:", phone
+        };
+        JOptionPane.showConfirmDialog(null, message, "Informations", JOptionPane.OK_CANCEL_OPTION);
+
+
+        String name1 = name.getText();
+        String Sname1 = surname.getText();
+        String eml = email.getText();
+        int phn = Integer.parseInt(phone.getText());
+    }
+
+}
+
+
+    private void deleteActionPerformed(ActionEvent e) {
+        // TODO add your code here
+        String name="Freddo Esspreso";
+        price=1.80;
+        sum=sum-price;
+        summ.setText(String.valueOf(sum));
+        int j=0;
+        informations.setText("");
+        String value = v.get(j);
+        while(value!=name) {
+            j++;
+            value=v.get(j);
         }
+        v.set(j,"delete");
+        name=v.get(j);
+        for (int i = 0; i < v.size(); i++) {
+            value = v.get(i);
+            if(value!=name) {
+                informations.append(value+"\n");
+            }
+        }
+        int count=0;
+        name="Freddo Esspreso";
+        for (int k = 0; k < v.size(); k++) {
+            value=v.get(k);
+            if (value==name)
+                count++;
+        }
+        if (count==0)
+            delete.setVisible(false);
+
+    }
+
+
+
 
         //String[] options = {"abc", "def", "ghi", "jkl"};
        // JOptionPane.showOptionDialog(null, "Returns the position of your choice on the array",
                // "Click a button",
                 //JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);}
-
-
-
 
 
 
@@ -203,6 +260,7 @@ public class Form extends JFrame {
         informations = new JTextArea();
         Delivery = new JCheckBox();
         button1 = new JButton();
+        button2 = new JButton();
         delete = new JButton();
         buttonBar = new JPanel();
         okButton = new JButton();
@@ -285,6 +343,9 @@ public class Form extends JFrame {
                 delete.setVisible(false);
                 delete.addActionListener(e -> deleteActionPerformed(e));
 
+                //---- button2 ----
+                button2.setText("text");
+
                 GroupLayout PanelLayout = new GroupLayout(Panel);
                 Panel.setLayout(PanelLayout);
                 PanelLayout.setHorizontalGroup(
@@ -312,27 +373,31 @@ public class Form extends JFrame {
                                     .addComponent(frs)
                                     .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(delete)))
-                            .addContainerGap(107, Short.MAX_VALUE))
-                        .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                            .addContainerGap(107, Short.MAX_VALUE)
+                                    .addComponent(orange)
+                            .addContainerGap(82, Short.MAX_VALUE)
+
+                            .addGap(0, 383, Short.MAX_VALUE)
                             .addGap(0, 385, Short.MAX_VALUE)
                             .addGroup(PanelLayout.createParallelGroup()
-                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(frappe)
                                     .addGap(223, 223, 223))
-                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(Fcap)
                                     .addGap(184, 184, 184))
-                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(Hamericano)
                                     .addGap(206, 206, 206))))
-                        .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                        .addGroup(TRAILING, PanelLayout.createSequentialGroup()
                             .addGap(72, 72, 72)
                             .addGroup(PanelLayout.createParallelGroup()
-                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 143, GroupLayout.PREFERRED_SIZE)
                                     .addGroup(PanelLayout.createParallelGroup()
                                         .addGroup(PanelLayout.createSequentialGroup()
                                             .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
                                             .addComponent(apple)
                                             .addGap(302, 302, 302))
                                         .addGroup(PanelLayout.createSequentialGroup()
@@ -341,7 +406,10 @@ public class Form extends JFrame {
                                             .addGap(79, 79, 79)
                                             .addComponent(button1)
                                             .addContainerGap(112, Short.MAX_VALUE))))
-                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
+                                    .addGap(0, 151, Short.MAX_VALUE)
+                                    .addComponent(button2)
+                                    .addGap(136, 136, 136)
                                     .addComponent(tea)
                                     .addGap(169, 169, 169))))
                 );
@@ -355,11 +423,11 @@ public class Form extends JFrame {
                                             .addGap(172, 172, 172)
                                             .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                        .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                        .addGroup(TRAILING, PanelLayout.createSequentialGroup()
                                             .addComponent(button1)
                                             .addGap(88, 88, 88)))
                                     .addComponent(milskhake))
-                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
                                     .addGap(161, 161, 161)
                                     .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 97, GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
@@ -375,6 +443,10 @@ public class Form extends JFrame {
                             .addGap(7, 7, 7)
                             .addComponent(tea)
                             .addGap(57, 57, 57)
+                            .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                .addComponent(tea)
+                                .addComponent(button2))
+                            .addGap(75, 75, 75)
                             .addComponent(Capuccino)
                             .addGap(24, 24, 24)
                             .addComponent(Fcap)
@@ -429,6 +501,7 @@ public class Form extends JFrame {
     private JTextArea informations;
     private JCheckBox Delivery;
     private JButton button1;
+    private JButton button2;
     private JButton delete;
     private JPanel buttonBar;
     private JButton okButton;
