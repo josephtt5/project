@@ -19,6 +19,7 @@ public class Form extends JFrame {
     }
     double sum=0;
     double price=0;
+    int counter=0;
 
 
 
@@ -94,9 +95,15 @@ public class Form extends JFrame {
 
        private void DeliveryItemStateChanged(ItemEvent e) {
         price  = 2.00;
-        sum=sum+price;
+        if (counter%2 ==0) {
+            sum = sum + price;
+            //informations.append("Delivery\n");
+        }
+        else
+            sum=sum-price;
+        counter++;
         summ.setText(String.valueOf(sum));
-        informations.append("Delivery\n");
+
     }
 
 
@@ -120,7 +127,7 @@ public class Form extends JFrame {
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
-        // Generated using JFormDesigner Evaluation license - joseph tsoutsouki
+        // Generated using JFormDesigner Evaluation license - totis96
         dialogPane = new JPanel();
         Panel = new JPanel();
         frs = new JButton();
@@ -213,30 +220,8 @@ public class Form extends JFrame {
                 Panel.setLayout(PanelLayout);
                 PanelLayout.setHorizontalGroup(
                     PanelLayout.createParallelGroup()
-                        .addGroup(PanelLayout.createSequentialGroup()
-                            .addGroup(PanelLayout.createParallelGroup()
-                                .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGroup(PanelLayout.createParallelGroup()
-                                        .addGroup(PanelLayout.createSequentialGroup()
-                                            .addGap(119, 119, 119)
-                                            .addComponent(frs))
-                                        .addGroup(PanelLayout.createSequentialGroup()
-                                            .addGap(31, 31, 31)
-                                            .addComponent(summ, GroupLayout.PREFERRED_SIZE, 93, GroupLayout.PREFERRED_SIZE)))
-                                    .addGap(190, 190, 190)
-                                    .addComponent(milskhake))
-                                .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(163, 163, 163)
-                                    .addComponent(Capuccino))
-                                .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(183, 183, 183)
-                                    .addComponent(orange))
-                                .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(100, 100, 100)
-                                    .addComponent(Americano)))
-                            .addContainerGap(214, Short.MAX_VALUE))
                         .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
-                            .addGap(0, 378, Short.MAX_VALUE)
+                            .addGap(0, 382, Short.MAX_VALUE)
                             .addGroup(PanelLayout.createParallelGroup()
                                 .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(frappe)
@@ -247,20 +232,38 @@ public class Form extends JFrame {
                                 .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(Hamericano)
                                     .addGap(206, 206, 206))))
+                        .addGroup(PanelLayout.createSequentialGroup()
+                            .addGroup(PanelLayout.createParallelGroup()
+                                .addGroup(PanelLayout.createSequentialGroup()
+                                    .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(PanelLayout.createSequentialGroup()
+                                            .addGap(34, 34, 34)
+                                            .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 222, GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(frs))
+                                        .addGroup(PanelLayout.createSequentialGroup()
+                                            .addContainerGap()
+                                            .addComponent(summ)))
+                                    .addGap(190, 190, 190)
+                                    .addComponent(milskhake))
+                                .addGroup(PanelLayout.createSequentialGroup()
+                                    .addGap(163, 163, 163)
+                                    .addComponent(Capuccino))
+                                .addGroup(PanelLayout.createSequentialGroup()
+                                    .addGap(100, 100, 100)
+                                    .addComponent(Americano))
+                                .addGroup(PanelLayout.createSequentialGroup()
+                                    .addGap(253, 253, 253)
+                                    .addComponent(orange)
+                                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 98, GroupLayout.PREFERRED_SIZE)))
+                            .addContainerGap(79, Short.MAX_VALUE))
                         .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
-                            .addGap(72, 72, 72)
+                            .addGap(41, 303, Short.MAX_VALUE)
                             .addGroup(PanelLayout.createParallelGroup()
                                 .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
-                                    .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 143, GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(PanelLayout.createParallelGroup()
-                                        .addGroup(PanelLayout.createSequentialGroup()
-                                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
-                                            .addComponent(apple)
-                                            .addGap(302, 302, 302))
-                                        .addGroup(PanelLayout.createSequentialGroup()
-                                            .addGap(97, 97, 97)
-                                            .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 98, GroupLayout.PREFERRED_SIZE)
-                                            .addContainerGap(269, Short.MAX_VALUE))))
+                                    .addComponent(apple)
+                                    .addGap(302, 302, 302))
                                 .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(tea)
                                     .addGap(169, 169, 169))))
@@ -268,26 +271,25 @@ public class Form extends JFrame {
                 PanelLayout.setVerticalGroup(
                     PanelLayout.createParallelGroup()
                         .addGroup(PanelLayout.createSequentialGroup()
-                            .addGap(180, 180, 180)
-                            .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
                                 .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(11, 11, 11)
                                     .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(milskhake))
+                                    .addGap(142, 142, 142)
+                                    .addComponent(milskhake)
+                                    .addGap(18, 18, 18))
                                 .addGroup(PanelLayout.createSequentialGroup()
-                                    .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 97, GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+                                        .addComponent(frs)
+                                        .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 185, GroupLayout.PREFERRED_SIZE))
                                     .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(frs)
-                                    .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(summ, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
-                            .addGap(18, 18, 18)
+                                    .addComponent(summ, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)))
                             .addComponent(Americano)
                             .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(apple)
                             .addGap(7, 7, 7)
                             .addComponent(tea)
-                            .addGap(75, 75, 75)
+                            .addGap(97, 97, 97)
                             .addComponent(Capuccino)
                             .addGap(24, 24, 24)
                             .addComponent(Fcap)
@@ -300,7 +302,7 @@ public class Form extends JFrame {
                             .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 );
             }
-            dialogPane.add(Panel, BorderLayout.WEST);
+            dialogPane.add(Panel, BorderLayout.CENTER);
 
             //======== buttonBar ========
             {
@@ -324,7 +326,7 @@ public class Form extends JFrame {
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - joseph tsoutsouki
+    // Generated using JFormDesigner Evaluation license - totis96
     private JPanel dialogPane;
     private JPanel Panel;
     private JButton frs;
