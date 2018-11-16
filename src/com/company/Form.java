@@ -8,6 +8,7 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.ItemEvent;
 
 /**
  * @author joseph tsoutsouki
@@ -91,6 +92,15 @@ public class Form extends JFrame {
         informations.append("Orange Juice\n");
     }
 
+       private void DeliveryItemStateChanged(ItemEvent e) {
+        price  = 2.00;
+        sum=sum+price;
+        summ.setText(String.valueOf(sum));
+        informations.append("Delivery\n");
+    }
+
+
+
 
 
 
@@ -126,6 +136,7 @@ public class Form extends JFrame {
         summ = new JTextField();
         scrollPane1 = new JScrollPane();
         informations = new JTextArea();
+        Delivery = new JCheckBox();
         buttonBar = new JPanel();
         okButton = new JButton();
 
@@ -194,6 +205,10 @@ public class Form extends JFrame {
                     scrollPane1.setViewportView(informations);
                 }
 
+                //---- Delivery ----
+                Delivery.setText("Delivery");
+                Delivery.addItemListener(e -> DeliveryItemStateChanged(e));
+
                 GroupLayout PanelLayout = new GroupLayout(Panel);
                 Panel.setLayout(PanelLayout);
                 PanelLayout.setHorizontalGroup(
@@ -237,9 +252,15 @@ public class Form extends JFrame {
                             .addGroup(PanelLayout.createParallelGroup()
                                 .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 143, GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
-                                    .addComponent(apple)
-                                    .addGap(302, 302, 302))
+                                    .addGroup(PanelLayout.createParallelGroup()
+                                        .addGroup(PanelLayout.createSequentialGroup()
+                                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
+                                            .addComponent(apple)
+                                            .addGap(302, 302, 302))
+                                        .addGroup(PanelLayout.createSequentialGroup()
+                                            .addGap(97, 97, 97)
+                                            .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 98, GroupLayout.PREFERRED_SIZE)
+                                            .addContainerGap(269, Short.MAX_VALUE))))
                                 .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(tea)
                                     .addGap(169, 169, 169))))
@@ -248,8 +269,12 @@ public class Form extends JFrame {
                     PanelLayout.createParallelGroup()
                         .addGroup(PanelLayout.createSequentialGroup()
                             .addGap(180, 180, 180)
-                            .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-                                .addComponent(milskhake)
+                            .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(PanelLayout.createSequentialGroup()
+                                    .addGap(11, 11, 11)
+                                    .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(milskhake))
                                 .addGroup(PanelLayout.createSequentialGroup()
                                     .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 97, GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
@@ -315,6 +340,7 @@ public class Form extends JFrame {
     private JTextField summ;
     private JScrollPane scrollPane1;
     private JTextArea informations;
+    private JCheckBox Delivery;
     private JPanel buttonBar;
     private JButton okButton;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
