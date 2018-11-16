@@ -24,63 +24,97 @@ public class Form extends JFrame {
     private void milskhakeActionPerformed(ActionEvent e) {
         price = 1.80;
         sum=sum+price;
-    }
+       summ.setText(String.valueOf(sum));
+        informations.append("Milkshake\n");
+           }
 
     private void appleActionPerformed(ActionEvent e) {
         price = 1.80;
         sum=sum+price;
+        summ.setText(String.valueOf(sum));
+        informations.append("Apple Juice\n");
     }
 
     private void teaActionPerformed(ActionEvent e) {
         price = 1.80;
         sum=sum+price;
+        summ.setText(String.valueOf(sum));
+        informations.append("Tea\n");
     }
 
     private void HamericanoActionPerformed(ActionEvent e) {
         price = 1.80;
         sum=sum+price;
+        summ.setText(String.valueOf(sum));
+        informations.append("Hot Americano\n");
     }
 
     private void frappeActionPerformed(ActionEvent e) {
         price = 1.80;
         sum=sum+price;
+        summ.setText(String.valueOf(sum));
+        informations.append("Frappe\n");
     }
 
     private void FcapActionPerformed(ActionEvent e) {
         price = 1.80;
         sum=sum+price;
+        summ.setText(String.valueOf(sum));
+        informations.append("Freddo Capuccino\n");
     }
     private void frsActionPerformed(ActionEvent e) {
-        // TODO add your code here
         price = 1.80;
         sum=sum+price;
-
+        summ.setText(String.valueOf(sum));
+        informations.append("Freddo Esspreso\n");
     }
 
-    private void AmericanioActionPerformed(ActionEvent e) {
+    private void AmericanoActionPerformed(ActionEvent e) {
         price = 1.50;
         sum=sum+price;
+        summ.setText(String.valueOf(sum));
+        informations.append("Americano\n");
     }
 
     private void CapuccinoActionPerformed(ActionEvent e) {
-        // TODO add your code here
         price = 2.50;
         sum=sum+price;
+        summ.setText(String.valueOf(sum));
+        informations.append("Cappuccino\n");
     }
 
     private void orangeActionPerformed(ActionEvent e) {
-        // TODO add your code here
+
         price  = 3.00;
         sum=sum+price;
+        summ.setText(String.valueOf(sum));
+        informations.append("Orange Juice\n");
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
-        // Generated using JFormDesigner Evaluation license - totis96
+        // Generated using JFormDesigner Evaluation license - joseph tsoutsouki
         dialogPane = new JPanel();
         Panel = new JPanel();
         frs = new JButton();
-        Americanio = new JButton();
+        Americano = new JButton();
         Capuccino = new JButton();
         orange = new JButton();
         apple = new JButton();
@@ -89,6 +123,9 @@ public class Form extends JFrame {
         tea = new JButton();
         Fcap = new JButton();
         Hamericano = new JButton();
+        summ = new JTextField();
+        scrollPane1 = new JScrollPane();
+        informations = new JTextArea();
         buttonBar = new JPanel();
         okButton = new JButton();
 
@@ -116,14 +153,17 @@ public class Form extends JFrame {
                 frs.setText("1.80");
                 frs.addActionListener(e -> frsActionPerformed(e));
 
-                //---- Americanio ----
-                Americanio.setText("text");
+                //---- Americano ----
+                Americano.setText("text");
+                Americano.addActionListener(e -> AmericanoActionPerformed(e));
 
                 //---- Capuccino ----
                 Capuccino.setText("text");
+                Capuccino.addActionListener(e -> CapuccinoActionPerformed(e));
 
                 //---- orange ----
                 orange.setText("text");
+                orange.addActionListener(e -> orangeActionPerformed(e));
 
                 //---- apple ----
                 apple.setText("text");
@@ -149,6 +189,11 @@ public class Form extends JFrame {
                 Hamericano.setText("text");
                 Hamericano.addActionListener(e -> HamericanoActionPerformed(e));
 
+                //======== scrollPane1 ========
+                {
+                    scrollPane1.setViewportView(informations);
+                }
+
                 GroupLayout PanelLayout = new GroupLayout(Panel);
                 Panel.setLayout(PanelLayout);
                 PanelLayout.setHorizontalGroup(
@@ -156,56 +201,68 @@ public class Form extends JFrame {
                         .addGroup(PanelLayout.createSequentialGroup()
                             .addGroup(PanelLayout.createParallelGroup()
                                 .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(119, 119, 119)
-                                    .addComponent(frs)
+                                    .addGroup(PanelLayout.createParallelGroup()
+                                        .addGroup(PanelLayout.createSequentialGroup()
+                                            .addGap(119, 119, 119)
+                                            .addComponent(frs))
+                                        .addGroup(PanelLayout.createSequentialGroup()
+                                            .addGap(31, 31, 31)
+                                            .addComponent(summ, GroupLayout.PREFERRED_SIZE, 93, GroupLayout.PREFERRED_SIZE)))
                                     .addGap(190, 190, 190)
                                     .addComponent(milskhake))
-                                .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(138, 138, 138)
-                                    .addComponent(Americanio))
                                 .addGroup(PanelLayout.createSequentialGroup()
                                     .addGap(163, 163, 163)
                                     .addComponent(Capuccino))
                                 .addGroup(PanelLayout.createSequentialGroup()
                                     .addGap(183, 183, 183)
-                                    .addComponent(orange)))
+                                    .addComponent(orange))
+                                .addGroup(PanelLayout.createSequentialGroup()
+                                    .addGap(100, 100, 100)
+                                    .addComponent(Americano)))
                             .addContainerGap(214, Short.MAX_VALUE))
                         .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
-                            .addGap(0, 299, Short.MAX_VALUE)
+                            .addGap(0, 378, Short.MAX_VALUE)
                             .addGroup(PanelLayout.createParallelGroup()
-                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
-                                    .addComponent(apple)
-                                    .addGap(302, 302, 302))
                                 .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(frappe)
                                     .addGap(223, 223, 223))
-                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
-                                    .addComponent(tea)
-                                    .addGap(169, 169, 169))
                                 .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(Fcap)
                                     .addGap(184, 184, 184))
                                 .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(Hamericano)
                                     .addGap(206, 206, 206))))
+                        .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                            .addGap(72, 72, 72)
+                            .addGroup(PanelLayout.createParallelGroup()
+                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                    .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 143, GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
+                                    .addComponent(apple)
+                                    .addGap(302, 302, 302))
+                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                    .addComponent(tea)
+                                    .addGap(169, 169, 169))))
                 );
                 PanelLayout.setVerticalGroup(
                     PanelLayout.createParallelGroup()
                         .addGroup(PanelLayout.createSequentialGroup()
-                            .addGroup(PanelLayout.createParallelGroup()
+                            .addGap(180, 180, 180)
+                            .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+                                .addComponent(milskhake)
                                 .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(30, 30, 30)
-                                    .addComponent(frs))
-                                .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(52, 52, 52)
-                                    .addComponent(milskhake)))
-                            .addGap(35, 35, 35)
-                            .addComponent(Americanio)
+                                    .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 97, GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(frs)
+                                    .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(summ, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+                            .addGap(18, 18, 18)
+                            .addComponent(Americano)
                             .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(apple)
                             .addGap(7, 7, 7)
                             .addComponent(tea)
-                            .addGap(23, 23, 23)
+                            .addGap(75, 75, 75)
                             .addComponent(Capuccino)
                             .addGap(24, 24, 24)
                             .addComponent(Fcap)
@@ -215,10 +272,10 @@ public class Form extends JFrame {
                             .addComponent(orange)
                             .addGap(35, 35, 35)
                             .addComponent(Hamericano)
-                            .addContainerGap(124, Short.MAX_VALUE))
+                            .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 );
             }
-            dialogPane.add(Panel, BorderLayout.CENTER);
+            dialogPane.add(Panel, BorderLayout.WEST);
 
             //======== buttonBar ========
             {
@@ -242,11 +299,11 @@ public class Form extends JFrame {
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - totis96
+    // Generated using JFormDesigner Evaluation license - joseph tsoutsouki
     private JPanel dialogPane;
     private JPanel Panel;
     private JButton frs;
-    private JButton Americanio;
+    private JButton Americano;
     private JButton Capuccino;
     private JButton orange;
     private JButton apple;
@@ -255,6 +312,9 @@ public class Form extends JFrame {
     private JButton tea;
     private JButton Fcap;
     private JButton Hamericano;
+    private JTextField summ;
+    private JScrollPane scrollPane1;
+    private JTextArea informations;
     private JPanel buttonBar;
     private JButton okButton;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
