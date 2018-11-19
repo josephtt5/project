@@ -7,11 +7,9 @@ package com.company;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.util.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
-
-import static javax.swing.GroupLayout.Alignment.TRAILING;
+import java.util.Vector;
 
 /**
  * @author joseph tsoutsouki
@@ -120,18 +118,24 @@ public class Form extends JFrame {
        private void DeliveryItemStateChanged(ItemEvent e) {
 
         price  = 2.00;
-             if(counter%2==0) sum=sum+price;
-            else sum=sum-price;
+             if(counter%2==0){
+                 del=1;
+                 sum=sum+price;
+             }
 
+            else {
+                 sum = sum - price;
+                 del = 0;
+             }
         summ.setText(String.valueOf(sum));
         counter++;
-        del=1;
+
 
 
     }
 
     private void CheckoutAction(ActionEvent e) {
-        if (del == 1) {
+        if (del==1){
             JTextField address = new JTextField();
             JTextField name = new JTextField();
             JTextField surname = new JTextField();
@@ -179,7 +183,6 @@ public class Form extends JFrame {
 
 
     private void deleteActionPerformed(ActionEvent e) {
-        // TODO add your code here
         String name="Freddo Esspreso";
         price=1.80;
         sum=sum-price;
@@ -242,7 +245,7 @@ public class Form extends JFrame {
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
-        // Generated using JFormDesigner Evaluation license - totis96
+        // Generated using JFormDesigner Evaluation license - joseph tsoutsouki
         dialogPane = new JPanel();
         Panel = new JPanel();
         frs = new JButton();
@@ -338,13 +341,13 @@ public class Form extends JFrame {
                 button1.setText("Checkout");
                 button1.addActionListener(e -> CheckoutAction(e));
 
+                //---- button2 ----
+                button2.setText("text");
+
                 //---- delete ----
                 delete.setText("delete");
                 delete.setVisible(false);
                 delete.addActionListener(e -> deleteActionPerformed(e));
-
-                //---- button2 ----
-                button2.setText("text");
 
                 GroupLayout PanelLayout = new GroupLayout(Panel);
                 Panel.setLayout(PanelLayout);
@@ -353,99 +356,90 @@ public class Form extends JFrame {
                         .addGroup(PanelLayout.createSequentialGroup()
                             .addGroup(PanelLayout.createParallelGroup()
                                 .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGroup(PanelLayout.createParallelGroup()
-                                        .addGroup(PanelLayout.createSequentialGroup()
-                                            .addGap(31, 31, 31)
-                                            .addComponent(summ, GroupLayout.PREFERRED_SIZE, 93, GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(PanelLayout.createSequentialGroup()
-                                            .addGap(100, 100, 100)
-                                            .addComponent(Americano)))
-                                    .addGap(327, 327, 327)
-                                    .addComponent(milskhake))
+                                    .addGap(119, 119, 119)
+                                    .addComponent(frs)
+                                    .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(delete))
+                                .addGroup(PanelLayout.createSequentialGroup()
+                                    .addGap(31, 31, 31)
+                                    .addComponent(summ, GroupLayout.PREFERRED_SIZE, 93, GroupLayout.PREFERRED_SIZE))
+                                .addGroup(PanelLayout.createSequentialGroup()
+                                    .addGap(100, 100, 100)
+                                    .addComponent(Americano))
                                 .addGroup(PanelLayout.createSequentialGroup()
                                     .addGap(163, 163, 163)
                                     .addComponent(Capuccino))
                                 .addGroup(PanelLayout.createSequentialGroup()
                                     .addGap(183, 183, 183)
-                                    .addComponent(orange))
-                                .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGap(119, 119, 119)
-                                    .addComponent(frs)
-                                    .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(delete)))
-                            .addContainerGap(107, Short.MAX_VALUE)
-                                    .addComponent(orange)
-                            .addContainerGap(82, Short.MAX_VALUE)
-
+                                    .addComponent(orange)))
+                            .addContainerGap(397, Short.MAX_VALUE))
+                        .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                             .addGap(0, 383, Short.MAX_VALUE)
-                            .addGap(0, 385, Short.MAX_VALUE)
                             .addGroup(PanelLayout.createParallelGroup()
-                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
+                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(frappe)
                                     .addGap(223, 223, 223))
-                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
+                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(Fcap)
                                     .addGap(184, 184, 184))
-                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
+                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(Hamericano)
                                     .addGap(206, 206, 206))))
-                        .addGroup(TRAILING, PanelLayout.createSequentialGroup()
+                        .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                             .addGap(72, 72, 72)
                             .addGroup(PanelLayout.createParallelGroup()
-                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
+                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                                     .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 143, GroupLayout.PREFERRED_SIZE)
                                     .addGroup(PanelLayout.createParallelGroup()
                                         .addGroup(PanelLayout.createSequentialGroup()
-                                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
                                             .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
                                             .addComponent(apple)
                                             .addGap(302, 302, 302))
                                         .addGroup(PanelLayout.createSequentialGroup()
                                             .addGap(97, 97, 97)
-                                            .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 98, GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+                                                .addComponent(milskhake)
+                                                .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 98, GroupLayout.PREFERRED_SIZE))
                                             .addGap(79, 79, 79)
                                             .addComponent(button1)
                                             .addContainerGap(112, Short.MAX_VALUE))))
-                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
-                                    .addGap(0, 151, Short.MAX_VALUE)
-                                    .addComponent(button2)
-                                    .addGap(136, 136, 136)
+                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                    .addGap(0, 55, Short.MAX_VALUE)
                                     .addComponent(tea)
-                                    .addGap(169, 169, 169))))
+                                    .addGap(18, 18, 18)
+                                    .addComponent(button2)
+                                    .addGap(383, 383, 383))))
                 );
                 PanelLayout.setVerticalGroup(
                     PanelLayout.createParallelGroup()
                         .addGroup(PanelLayout.createSequentialGroup()
                             .addGroup(PanelLayout.createParallelGroup()
-                                .addGroup(PanelLayout.createSequentialGroup()
-                                    .addGroup(PanelLayout.createParallelGroup()
-                                        .addGroup(PanelLayout.createSequentialGroup()
-                                            .addGap(172, 172, 172)
-                                            .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                        .addGroup(TRAILING, PanelLayout.createSequentialGroup()
-                                            .addComponent(button1)
-                                            .addGap(88, 88, 88)))
-                                    .addComponent(milskhake))
-                                .addGroup(TRAILING, PanelLayout.createSequentialGroup()
-                                    .addGap(161, 161, 161)
+                                .addGroup(PanelLayout.createParallelGroup()
+                                    .addGroup(PanelLayout.createSequentialGroup()
+                                        .addGap(191, 191, 191)
+                                        .addComponent(Delivery, GroupLayout.PREFERRED_SIZE, 28, GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                        .addComponent(button1)
+                                        .addGap(118, 118, 118)))
+                                .addGroup(GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
+                                    .addGap(180, 180, 180)
                                     .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 97, GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                     .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                         .addComponent(frs)
                                         .addComponent(delete))
                                     .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(summ, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                        .addComponent(summ, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(milskhake))))
                             .addGap(18, 18, 18)
                             .addComponent(Americano)
                             .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(apple)
                             .addGap(7, 7, 7)
-                            .addComponent(tea)
-                            .addGap(57, 57, 57)
                             .addGroup(PanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                .addComponent(tea)
-                                .addComponent(button2))
+                                .addComponent(button2)
+                                .addComponent(tea))
                             .addGap(75, 75, 75)
                             .addComponent(Capuccino)
                             .addGap(24, 24, 24)
@@ -483,7 +477,7 @@ public class Form extends JFrame {
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - totis96
+    // Generated using JFormDesigner Evaluation license - joseph tsoutsouki
     private JPanel dialogPane;
     private JPanel Panel;
     private JButton frs;
