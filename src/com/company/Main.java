@@ -1,5 +1,4 @@
 package com.company;
-
 public class Main {
 
 
@@ -9,5 +8,7 @@ public class Main {
               form1.setVisible(true);
 
 
+      Form2 form2=new Form2(form1.v);
+      form2.setVisible(true);
     }
 }

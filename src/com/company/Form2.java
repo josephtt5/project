@@ -1,7 +1,10 @@
-import java.awt.*;
+package com.company;
+
 import javax.swing.*;
-import javax.swing.GroupLayout;
-import javax.swing.border.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.util.Vector;
 /*
  * Created by JFormDesigner on Mon Nov 19 18:17:00 EET 2018
  */
@@ -12,9 +15,25 @@ import javax.swing.border.*;
  * @author unknown
  */
 public class Form2 extends JFrame {
-    public Form2() {
+
+    Vector<String > a ;
+    public Form2(Vector <String> a) {
         initComponents();
+        this.a=a;
     }
+
+
+        private void reloadActionPerformed (ActionEvent e) {
+            for (int i = 0; i < a.size(); i++) {
+            String value= a.get(i);
+            informations1.append(value + "\n");
+        }
+        }
+
+
+
+
+
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
@@ -24,11 +43,11 @@ public class Form2 extends JFrame {
         accept = new JButton();
         reject = new JButton();
         scrollPane1 = new JScrollPane();
-        textArea1 = new JTextArea();
+        informations1 = new JTextArea();
         scrollPane2 = new JScrollPane();
         textArea2 = new JTextArea();
         scrollPane3 = new JScrollPane();
-        tree1 = new JTree();
+        reload = new JButton();
         buttonBar = new JPanel();
 
         //======== this ========
@@ -59,7 +78,7 @@ public class Form2 extends JFrame {
 
                 //======== scrollPane1 ========
                 {
-                    scrollPane1.setViewportView(textArea1);
+                    scrollPane1.setViewportView(informations1);
                 }
 
                 //======== scrollPane2 ========
@@ -67,10 +86,9 @@ public class Form2 extends JFrame {
                     scrollPane2.setViewportView(textArea2);
                 }
 
-                //======== scrollPane3 ========
-                {
-                    scrollPane3.setViewportView(tree1);
-                }
+                //---- reload ----
+                reload.setText("reload");
+                reload.addActionListener(e -> reloadActionPerformed(e));
 
                 GroupLayout contentPanelLayout = new GroupLayout(contentPanel);
                 contentPanel.setLayout(contentPanelLayout);
@@ -87,7 +105,8 @@ public class Form2 extends JFrame {
                                     .addGap(52, 52, 52)
                                     .addGroup(contentPanelLayout.createParallelGroup()
                                         .addComponent(accept, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(reject, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE))))
+                                        .addComponent(reject, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(reload))))
                             .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                             .addComponent(scrollPane3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                             .addGap(17, 17, 17))
@@ -99,13 +118,15 @@ public class Form2 extends JFrame {
                             .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
                                 .addComponent(scrollPane1, GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
                                 .addComponent(scrollPane2, GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE))
-                            .addGap(98, 98, 98)
+                            .addGap(26, 26, 26)
+                            .addComponent(reload)
+                            .addGap(52, 52, 52)
                             .addComponent(accept, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)
                             .addGap(22, 22, 22)
                             .addComponent(reject, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)
-                            .addContainerGap(68, Short.MAX_VALUE))
+                            .addContainerGap(58, Short.MAX_VALUE))
                         .addGroup(GroupLayout.Alignment.TRAILING, contentPanelLayout.createSequentialGroup()
-                            .addContainerGap(111, Short.MAX_VALUE)
+                            .addContainerGap(461, Short.MAX_VALUE)
                             .addComponent(scrollPane3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                             .addGap(14, 14, 14))
                 );
@@ -134,11 +155,11 @@ public class Form2 extends JFrame {
     private JButton accept;
     private JButton reject;
     private JScrollPane scrollPane1;
-    private JTextArea textArea1;
+    private JTextArea informations1;
     private JScrollPane scrollPane2;
     private JTextArea textArea2;
     private JScrollPane scrollPane3;
-    private JTree tree1;
+    private JButton reload;
     private JPanel buttonBar;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

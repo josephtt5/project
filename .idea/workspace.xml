@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85d81394-8d1e-446f-a942-6964a32446fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form2.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-3.18a/com/company/Form$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-3.18a/com/company/Form$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project-3.18a/com/company/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-3.18a/com/company/Form.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project-3.18a/com/company/Form.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-3.18a/com/company/Form.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project-3.18a/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project-3.18a/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Form2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form2.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Form2.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Form.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Form.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Form.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,36 +58,38 @@
     <session id="-1036031990">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="4" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="2" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1523" />
+          <entry key="java" value="2179" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1523" />
+          <entry key="JAVA" value="2179" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
-          <entry key="jfd" value="1" />
+          <entry key="java" value="4" />
+          <entry key="jfd" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
-          <entry key="JFormDesigner_form" value="1" />
+          <entry key="JAVA" value="4" />
+          <entry key="JFormDesigner_form" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -119,43 +121,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="187">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Form.jfd">
-          <provider selected="true" editor-type-id="JFormDesigner" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Form.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
+            <state relative-caret-position="623">
+              <caret line="1311" selection-start-line="1311" selection-end-line="1311" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1542411442352" expanded="true" signature="6034:18692" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1542411442352" expanded="false" signature="18704:19553" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+                <marker date="1542986494581" expanded="false" signature="18956:49467" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1542986494581" expanded="false" signature="49479:51365" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Form2.jfd">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Form.jfd">
+          <provider selected="true" editor-type-id="JFormDesigner">
+            <state propertiesWidth="287" structureHeight="349" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Form2.jfd">
           <provider selected="true" editor-type-id="JFormDesigner" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Form2.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Form2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="391">
+              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
               <folding>
-                <marker date="1542645029277" expanded="false" signature="333:6255" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1542645029277" expanded="false" signature="6267:6847" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+                <element signature="imports" expanded="true" />
+                <marker date="1542651729379" expanded="false" signature="674:6777" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1542651729379" expanded="false" signature="6789:7376" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
               </folding>
             </state>
           </provider>
@@ -179,10 +184,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/Form.java" />
         <option value="$PROJECT_DIR$/src/Form.jfd" />
+        <option value="$PROJECT_DIR$/src/Form2.jfd" />
+        <option value="$PROJECT_DIR$/src/com/company/Form2.jfd" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Form2.java" />
         <option value="$PROJECT_DIR$/src/com/company/Form.java" />
         <option value="$PROJECT_DIR$/src/com/company/Form.jfd" />
-        <option value="$PROJECT_DIR$/src/Form2.jfd" />
       </list>
     </option>
   </component>
@@ -203,6 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,21 +224,27 @@
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542406689076" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542982426795" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="configurable.group.other" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tzoze\Desktop\Java\project\src\com\company" />
       <recent name="C:\Users\tzoze\Desktop\Java\Project-3.18a\src\com\company" />
       <recent name="C:\Users\tzoze\Desktop\Java\Project-3.18a\src" />
     </key>
@@ -276,10 +291,49 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29932886" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.051006712" />
+      <window_info x="582" y="59" width="372" height="705" id="Structure" order="1" side_tool="true" type="WINDOWED" weight="0.24966443" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
+      <window_info anchor="bottom" id="JFormDesigner Bindings" order="11" weight="0.32907802" />
+      <window_info anchor="bottom" id="JFormDesigner Error Log" order="12" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3295302" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30738255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -307,10 +361,14 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.3295302" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Form.java" />
@@ -328,40 +386,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.237/Form.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="-7871" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Form2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1542651729379" expanded="false" signature="674:6777" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542651729379" expanded="false" signature="6789:7376" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form2.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1542645029277" expanded="false" signature="333:6255" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1542645029277" expanded="false" signature="6267:6847" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Form.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
+        <state relative-caret-position="623">
+          <caret line="1311" selection-start-line="1311" selection-end-line="1311" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1542411442352" expanded="true" signature="6034:18692" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1542411442352" expanded="false" signature="18704:19553" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1542986494581" expanded="false" signature="18956:49467" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1542986494581" expanded="false" signature="49479:51365" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Form.jfd">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Form2.jfd">
       <provider selected="true" editor-type-id="JFormDesigner" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form2.jfd">
-      <provider selected="true" editor-type-id="JFormDesigner" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/Form.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state propertiesWidth="287" structureHeight="349" />
+      </provider>
     </entry>
   </component>
 </project>
