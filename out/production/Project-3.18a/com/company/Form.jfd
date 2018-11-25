@@ -5,14 +5,13 @@ new FormModel {
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
 			name: "this"
-			"alwaysOnTop": true
-			"foreground": new java.awt.Color( 255, 0, 0, 255 )
+			"foreground": new java.awt.Color( 48, 36, 36, 255 )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {seq {par l {seq {space :::p, par l {comp summ:::p:93:p, seq l {comp textArea2:::p:121:p, space :p:266:p, comp textArea4:::p:143:p}, par t:l {seq {comp textArea14:::p:127:p, space u:::p, comp apple:::p::p, space :p:12:p, comp dapple:::p:76:p}, seq l {par t {comp textArea11:::p:52:p, comp textArea12:::p::p}, space :::p, comp orange:::p::p, space :::p, comp dorange:::p::p}}}}, seq {par l {seq l {comp textArea13:::p:50:p, space :p:123:p, par l {comp Delivery:::p:98:p, par t:l::p {comp Takeaway::l:::x, comp button1::l:::x}}}, comp scrollPane1::l:p:143:p, seq l {space :::p, comp textArea15:::p:127:p, space u:::p, comp mixed:::p::p, space u:::p, comp dmixed:::p:77:p}}, space :p:46:p, par l {seq l {par l:::p {comp textArea5::l:::x, comp textArea6::l:::x, comp textArea7::l::187:x, comp textArea8::l:::x, comp textArea9::l:::x, comp textArea10::l:::x, comp textArea17::t:::x, comp textArea19::::187:x, comp textArea3::l:::x, comp textArea1::l::187:x}, space :p:29:p, par l {seq {par l {comp frappe:::p::p, comp macchiato:::p::p, comp cmilkshake::l:p::p, comp tea::l:p::p, comp latte::t:p::p}, par l {seq l {space :p:18:p, comp dtea:::p:113:p}, seq l {space s:::p, comp dcmilkshake:::p:113:p}, seq l {space s:::p, par l {comp dlatte:::p:113:p, comp dmacchiato:::p:113:p, comp dfrappe::l:p:113:p}}}}, seq l {comp milskhake:::p::p, space s:::p, comp dvmilkshake:::p:113:p}, seq l {comp Fcappuccino:::p::p, space s:::p, comp dfcappuccino:::p:113:p}, seq l {comp Capuccino:::p::p, space s:::p, comp dcappuccino:::p:113:p}, seq l {comp Hamericano:::p::p, space s:::p, comp dhamericano:::p:113:p}, seq l {comp Americano:::p::p, space s:::p, comp damericano:::p:113:p}, seq l {comp frs:::p::p, space s:::p, comp delete:::p:113:p}}}, comp textArea18::l:p:187:p}}}, space ::58:x}}"
-				"$verticalGroup": "par l {seq {space :p:14:p, par b {comp textArea2::b:p::p, comp textArea4::b:p::p}, space s:::p, par l {seq l {par l {comp scrollPane1:::p:97:p, seq {comp Delivery:::p:28:p, space :p:28:p, comp Takeaway:::p::p}}, space s:::p, par b {comp textArea13::b:p::p, comp button1::b:p::p}, space u:::p, comp summ:::p::p, space :p:26:p}, seq l {space :p:32:p, par b {comp frs::b:p::p, comp delete::b:p::p, comp textArea1::b:p::p}, space ::28:x, par l {comp textArea3::t:p::p, par b:t {comp Americano::b:p::p, comp damericano::b:p::p}}, space s:::p, par b {comp Hamericano::b:p::p, comp textArea5::b:p::p, comp dhamericano::b:p::p}, space :p:25:p, par b {comp Capuccino::b:p::p, comp textArea6::b:p::p, comp dcappuccino::b:p::p}, space :28:28:p, par b {comp Fcappuccino::b:p::p, comp textArea7::b:p::p, comp dfcappuccino::b:p::p}, space :p:23:p, par b {comp textArea11::b:p:21:p, comp frappe::b:p::p, comp textArea8::b:p::p, comp dfrappe::b:p::p}, space ::27:x}}, par b {comp textArea12::b:p::p, comp textArea9::b:p::p, comp latte::b::43:x, comp dlatte::b:p::p, comp orange::b:p::p, comp dorange::b:p::p}, space s:::p, par l {seq {par b {comp macchiato::b:p::p, comp textArea10::b:p::p, comp dmacchiato::b:p:24:p}, space u:::p, par l {seq {par b {comp textArea17::b:p::p, comp milskhake::b:p::p, comp dvmilkshake::b:p::p}, space u:::p}, seq t {par b {comp textArea15::b:p::p, comp mixed::b:p::p, comp dmixed::b:p::p}, space :p:12:p}}, par b {comp textArea18::b:p::p, comp cmilkshake::b:p::p, comp dcmilkshake::b:p::p}, space s:::p, par b {comp textArea19::b:p::p, comp tea::b:p::p, comp dtea::b:p::p}}, par b:l {comp textArea14::b:p::p, comp apple::b:p::p, comp dapple::b:p::p}}, space :p:12:p}}"
+				"$horizontalGroup": "par l {seq {par l {seq {space :::p, par l {comp summ:::p:93:p, seq l {comp textArea2:::p:121:p, space :p:266:p, comp textArea4:::p:143:p}, par t:l {seq {comp textArea14:::p:127:p, space u:::p, comp apple:::p::p, space :p:12:p, comp dapple:::p:76:p}, seq l {par t {comp textArea11:::p:52:p, comp textArea12:::p::p}, space :::p, comp orange:::p::p, space :::p, comp dorange:::p::p}}}}, seq {par l {seq {par l {seq l {comp textArea13:::p:50:p, space :p:123:p, par l {comp Delivery:::p:98:p, comp Takeaway::l:p:81:p}}, comp scrollPane1::l:p:143:p, seq l {space :::p, comp textArea15:::p:127:p, space u:::p, comp mixed:::p::p, space u:::p, comp dmixed:::p:77:p}}, space :0:0:x}, comp Checkout::::299:x}, space :::p, par l {seq l {par l:::p {comp textArea5::l:::x, comp textArea6::l:::x, comp textArea7::l::187:x, comp textArea8::l:::x, comp textArea9::l:::x, comp textArea10::l:::x, comp textArea17::t:::x, comp textArea19::::187:x, comp textArea3::l:::x, comp textArea1::l::187:x}, space :p:29:p, par l {seq {par l {comp frappe:::p::p, comp macchiato:::p::p, comp cmilkshake::l:p::p, comp tea::l:p::p, comp latte::t:p::p}, par l {seq l {space :p:18:p, comp dtea:::p:113:p}, seq l {space s:::p, comp dcmilkshake:::p:113:p}, seq l {space s:::p, par l {comp dlatte:::p:113:p, comp dmacchiato:::p:113:p, comp dfrappe::l:p:113:p}}}}, seq l {comp milskhake:::p::p, space s:::p, comp dvmilkshake:::p:113:p}, seq l {comp Fcappuccino:::p::p, space s:::p, comp dfcappuccino:::p:113:p}, seq l {comp Capuccino:::p::p, space s:::p, comp dcappuccino:::p:113:p}, seq l {comp Hamericano:::p::p, space s:::p, comp dhamericano:::p:113:p}, seq l {comp Americano:::p::p, space s:::p, comp damericano:::p:113:p}, seq l {comp frs:::p::p, space s:::p, comp delete:::p:113:p}}}, comp textArea18::l:p:187:p}}}, space ::115:x}}"
+				"$verticalGroup": "par l {seq {space :p:14:p, par b {comp textArea2::b:p::p, comp textArea4::b:p::p}, space s::71:x, par l {seq {space :p:32:p, par b {comp frs::b:p::p, comp delete::b:p::p, comp textArea1::b:p::p}, space :::x, par l {comp textArea3::t:p::p, par b:t {comp Americano::b:p::p, comp damericano::b:p::p}}, space s:::p, par b {comp Hamericano::b:p::p, comp textArea5::b:p::p, comp dhamericano::b:p::p}, space :p:25:p, par b {comp Capuccino::b:p::p, comp textArea6::b:p::p, comp dcappuccino::b:p::p}, space :28:28:p, par b {comp Fcappuccino::b:p::p, comp textArea7::b:p::p, comp dfcappuccino::b:p::p}, space :p:23:p}, seq {par l {comp scrollPane1:::p:97:p, seq {comp Delivery:::p:28:p, space :p:28:p, comp Takeaway:::p::p}}, space s:::p, comp textArea13:::p::p, space u:::p, comp summ:::p::p, space :p:28:p, comp Checkout:::p::p, space :::x}}, par b {comp textArea11::b:p:21:p, comp frappe::b:p::p, comp textArea8::b:p::p, comp dfrappe::b:p::p}, par b {comp textArea12::b:p::p, comp textArea9::b:p::p, comp latte::b::43:x, comp dlatte::b:p::p, comp orange::b:p::p, comp dorange::b:p::p}, space s:::p, par l {seq {par b {comp macchiato::b:p::p, comp textArea10::b:p::p, comp dmacchiato::b:p:24:p}, space u:::p, par l {seq {par b {comp textArea17::b:p::p, comp milskhake::b:p::p, comp dvmilkshake::b:p::p}, space u:::p}, seq t {par b {comp textArea15::b:p::p, comp mixed::b:p::p, comp dmixed::b:p::p}, space :p:12:p}}, par b {comp textArea18::b:p::p, comp cmilkshake::b:p::p, comp dcmilkshake::b:p::p}, space s:::p, par b {comp textArea19::b:p::p, comp tea::b:p::p, comp dtea::b:p::p}}, par b:l {comp textArea14::b:p::p, comp apple::b:p::p, comp dapple::b:p::p}}, space :p:12:p}}"
 			} ) {
 				name: "Panel"
-				"background": new java.awt.Color( 255, 51, 0, 255 )
+				"background": new java.awt.Color( 217, 140, 89, 255 )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "frs"
 					"text": "Order"
@@ -82,9 +81,9 @@ new FormModel {
 					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "DeliveryItemStateChanged", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
-					name: "button1"
+					name: "Checkout"
 					"text": "Checkout"
-					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CheckoutAction", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CheckoutActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "delete"
@@ -293,10 +292,10 @@ new FormModel {
 					"text": "Takeaway"
 				} )
 			}, new FormLayoutConstraints( class java.lang.String ) {
-				"value": "North"
+				"value": "South"
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 30, 5 )
+			"location": new java.awt.Point( 40, 5 )
 			"size": new java.awt.Dimension( 730, 675 )
 		} )
 	}

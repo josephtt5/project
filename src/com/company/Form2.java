@@ -1,9 +1,6 @@
-package com.company;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.util.Vector;
 /*
  * Created by JFormDesigner on Mon Nov 19 18:17:00 EET 2018
@@ -17,13 +14,14 @@ import java.util.Vector;
 public class Form2 extends JFrame {
 
     Vector<String > a ;
-    public Form2(Vector <String> a) {
+    int orderNum;
+    public Form2(Vector <String> a,int orderNum) {
         initComponents();
         this.a=a;
-    }
+        this.orderNum=orderNum;
 
-
-        private void reloadActionPerformed (ActionEvent e) {
+            TITLE.setText("ORDER NUM:"+orderNum);
+            time.setText("Time required for order(approximately): " + a.size()*5 + " Minutes");
             for (int i = 0; i < a.size(); i++) {
             String value= a.get(i);
             informations1.append(value + "\n");
@@ -46,9 +44,8 @@ public class Form2 extends JFrame {
         informations1 = new JTextArea();
         scrollPane2 = new JScrollPane();
         textArea2 = new JTextArea();
-        scrollPane3 = new JScrollPane();
-        reload = new JButton();
-        buttonBar = new JPanel();
+        TITLE = new JTextField();
+        time = new JTextField();
 
         //======== this ========
         Container contentPane = getContentPane();
@@ -57,6 +54,7 @@ public class Form2 extends JFrame {
         //======== dialogPane ========
         {
             dialogPane.setBorder(new EmptyBorder(12, 12, 12, 12));
+            dialogPane.setBackground(Color.black);
 
             // JFormDesigner evaluation mark
             dialogPane.setBorder(new javax.swing.border.CompoundBorder(
@@ -69,6 +67,7 @@ public class Form2 extends JFrame {
 
             //======== contentPanel ========
             {
+                contentPanel.setBackground(Color.black);
 
                 //---- accept ----
                 accept.setText("accept");
@@ -86,61 +85,56 @@ public class Form2 extends JFrame {
                     scrollPane2.setViewportView(textArea2);
                 }
 
-                //---- reload ----
-                reload.setText("reload");
-                reload.addActionListener(e -> reloadActionPerformed(e));
+                //---- TITLE ----
+                TITLE.setHorizontalAlignment(SwingConstants.CENTER);
+                TITLE.setFont(new Font("Arial Black", Font.BOLD, 24));
+
+                //---- time ----
+                time.setFont(new Font("Arial Black", Font.BOLD, 14));
 
                 GroupLayout contentPanelLayout = new GroupLayout(contentPanel);
                 contentPanel.setLayout(contentPanelLayout);
                 contentPanelLayout.setHorizontalGroup(
                     contentPanelLayout.createParallelGroup()
+                        .addGroup(GroupLayout.Alignment.TRAILING, contentPanelLayout.createSequentialGroup()
+                            .addGap(0, 105, Short.MAX_VALUE)
+                            .addComponent(TITLE, GroupLayout.PREFERRED_SIZE, 319, GroupLayout.PREFERRED_SIZE)
+                            .addGap(94, 94, 94))
                         .addGroup(contentPanelLayout.createSequentialGroup()
+                            .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 175, GroupLayout.PREFERRED_SIZE)
+                            .addGap(26, 26, 26)
                             .addGroup(contentPanelLayout.createParallelGroup()
-                                .addGroup(contentPanelLayout.createSequentialGroup()
-                                    .addGap(19, 19, 19)
-                                    .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 175, GroupLayout.PREFERRED_SIZE)
-                                    .addGap(83, 83, 83)
-                                    .addComponent(scrollPane2, GroupLayout.PREFERRED_SIZE, 175, GroupLayout.PREFERRED_SIZE))
-                                .addGroup(contentPanelLayout.createSequentialGroup()
-                                    .addGap(52, 52, 52)
-                                    .addGroup(contentPanelLayout.createParallelGroup()
-                                        .addComponent(accept, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(reject, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(reload))))
-                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                            .addComponent(scrollPane3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                            .addGap(17, 17, 17))
+                                .addComponent(accept, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE)
+                                .addComponent(reject, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                            .addComponent(scrollPane2, GroupLayout.PREFERRED_SIZE, 175, GroupLayout.PREFERRED_SIZE)
+                            .addContainerGap())
+                        .addGroup(contentPanelLayout.createSequentialGroup()
+                            .addComponent(time, GroupLayout.DEFAULT_SIZE, 512, Short.MAX_VALUE)
+                            .addContainerGap())
                 );
                 contentPanelLayout.setVerticalGroup(
                     contentPanelLayout.createParallelGroup()
                         .addGroup(contentPanelLayout.createSequentialGroup()
-                            .addGap(41, 41, 41)
-                            .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
-                                .addComponent(scrollPane1, GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                                .addComponent(scrollPane2, GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE))
-                            .addGap(26, 26, 26)
-                            .addComponent(reload)
-                            .addGap(52, 52, 52)
-                            .addComponent(accept, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)
-                            .addGap(22, 22, 22)
-                            .addComponent(reject, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)
-                            .addContainerGap(58, Short.MAX_VALUE))
-                        .addGroup(GroupLayout.Alignment.TRAILING, contentPanelLayout.createSequentialGroup()
-                            .addContainerGap(461, Short.MAX_VALUE)
-                            .addComponent(scrollPane3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                            .addGap(14, 14, 14))
+                            .addContainerGap()
+                            .addComponent(TITLE, GroupLayout.PREFERRED_SIZE, 54, GroupLayout.PREFERRED_SIZE)
+                            .addGroup(contentPanelLayout.createParallelGroup()
+                                .addGroup(contentPanelLayout.createSequentialGroup()
+                                    .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(contentPanelLayout.createParallelGroup()
+                                        .addComponent(scrollPane1, GroupLayout.PREFERRED_SIZE, 178, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(scrollPane2, GroupLayout.PREFERRED_SIZE, 178, GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(contentPanelLayout.createSequentialGroup()
+                                    .addGap(40, 40, 40)
+                                    .addComponent(accept, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)
+                                    .addGap(39, 39, 39)
+                                    .addComponent(reject, GroupLayout.PREFERRED_SIZE, 40, GroupLayout.PREFERRED_SIZE)))
+                            .addGap(57, 57, 57)
+                            .addComponent(time, GroupLayout.PREFERRED_SIZE, 50, GroupLayout.PREFERRED_SIZE)
+                            .addContainerGap(162, Short.MAX_VALUE))
                 );
             }
             dialogPane.add(contentPanel, BorderLayout.WEST);
-
-            //======== buttonBar ========
-            {
-                buttonBar.setBorder(new EmptyBorder(12, 0, 0, 0));
-                buttonBar.setLayout(new GridBagLayout());
-                ((GridBagLayout)buttonBar.getLayout()).columnWidths = new int[] {0, 80};
-                ((GridBagLayout)buttonBar.getLayout()).columnWeights = new double[] {1.0, 0.0};
-            }
-            dialogPane.add(buttonBar, BorderLayout.SOUTH);
         }
         contentPane.add(dialogPane, BorderLayout.CENTER);
         pack();
@@ -158,8 +152,7 @@ public class Form2 extends JFrame {
     private JTextArea informations1;
     private JScrollPane scrollPane2;
     private JTextArea textArea2;
-    private JScrollPane scrollPane3;
-    private JButton reload;
-    private JPanel buttonBar;
+    private JTextField TITLE;
+    private JTextField time;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

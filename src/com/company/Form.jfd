@@ -3,26 +3,31 @@ JFDML JFormDesigner: "6.0.4.1.172" Java: "1.8.0_152-release" encoding: "UTF-8"
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
-		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+		"$setComponentNames": true
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {space :0:718:x};par l {seq {space :0:0:x, comp Panel:::p::p, space :0:0:x}}"
+			"$verticalGroup": "par l {space :0:785:x};par l {seq {space :0:0:x, comp Panel:::p::p, space :0:0:x}}"
+		} ) {
 			name: "this"
-			"alwaysOnTop": true
-			"foreground": new java.awt.Color( 255, 0, 0, 255 )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {seq {par l {seq {space :::p, par l {comp summ:::p:93:p, seq l {comp textArea2:::p:121:p, space :p:266:p, comp textArea4:::p:143:p}, par t:l {seq {comp textArea14:::p:127:p, space u:::p, comp apple:::p::p, space :p:12:p, comp dapple:::p:76:p}, seq l {par t {comp textArea11:::p:52:p, comp textArea12:::p::p}, space :::p, comp orange:::p::p, space :::p, comp dorange:::p::p}}}}, seq {par l {seq l {comp textArea13:::p:50:p, space :p:123:p, par l {comp Delivery:::p:98:p, par t:l::p {comp Takeaway::l:::x, comp button1::l:::x}}}, comp scrollPane1::l:p:143:p, seq l {space :::p, comp textArea15:::p:127:p, space u:::p, comp mixed:::p::p, space u:::p, comp dmixed:::p:77:p}}, space :p:46:p, par l {seq l {par l:::p {comp textArea5::l:::x, comp textArea6::l:::x, comp textArea7::l::187:x, comp textArea8::l:::x, comp textArea9::l:::x, comp textArea10::l:::x, comp textArea17::t:::x, comp textArea19::::187:x, comp textArea3::l:::x, comp textArea1::l::187:x}, space :p:29:p, par l {seq {par l {comp frappe:::p::p, comp macchiato:::p::p, comp cmilkshake::l:p::p, comp tea::l:p::p, comp latte::t:p::p}, par l {seq l {space :p:18:p, comp dtea:::p:113:p}, seq l {space s:::p, comp dcmilkshake:::p:113:p}, seq l {space s:::p, par l {comp dlatte:::p:113:p, comp dmacchiato:::p:113:p, comp dfrappe::l:p:113:p}}}}, seq l {comp milskhake:::p::p, space s:::p, comp dvmilkshake:::p:113:p}, seq l {comp Fcappuccino:::p::p, space s:::p, comp dfcappuccino:::p:113:p}, seq l {comp Capuccino:::p::p, space s:::p, comp dcappuccino:::p:113:p}, seq l {comp Hamericano:::p::p, space s:::p, comp dhamericano:::p:113:p}, seq l {comp Americano:::p::p, space s:::p, comp damericano:::p:113:p}, seq l {comp frs:::p::p, space s:::p, comp delete:::p:113:p}}}, comp textArea18::l:p:187:p}}}, space ::58:x}}"
-				"$verticalGroup": "par l {seq {space :p:14:p, par b {comp textArea2::b:p::p, comp textArea4::b:p::p}, space s:::p, par l {seq l {par l {comp scrollPane1:::p:97:p, seq {comp Delivery:::p:28:p, space :p:28:p, comp Takeaway:::p::p}}, space s:::p, par b {comp textArea13::b:p::p, comp button1::b:p::p}, space u:::p, comp summ:::p::p, space :p:26:p}, seq l {space :p:32:p, par b {comp frs::b:p::p, comp delete::b:p::p, comp textArea1::b:p::p}, space ::28:x, par l {comp textArea3::t:p::p, par b:t {comp Americano::b:p::p, comp damericano::b:p::p}}, space s:::p, par b {comp Hamericano::b:p::p, comp textArea5::b:p::p, comp dhamericano::b:p::p}, space :p:25:p, par b {comp Capuccino::b:p::p, comp textArea6::b:p::p, comp dcappuccino::b:p::p}, space :28:28:p, par b {comp Fcappuccino::b:p::p, comp textArea7::b:p::p, comp dfcappuccino::b:p::p}, space :p:23:p, par b {comp textArea11::b:p:21:p, comp frappe::b:p::p, comp textArea8::b:p::p, comp dfrappe::b:p::p}, space ::27:x}}, par b {comp textArea12::b:p::p, comp textArea9::b:p::p, comp latte::b::43:x, comp dlatte::b:p::p, comp orange::b:p::p, comp dorange::b:p::p}, space s:::p, par l {seq {par b {comp macchiato::b:p::p, comp textArea10::b:p::p, comp dmacchiato::b:p:24:p}, space u:::p, par l {seq {par b {comp textArea17::b:p::p, comp milskhake::b:p::p, comp dvmilkshake::b:p::p}, space u:::p}, seq t {par b {comp textArea15::b:p::p, comp mixed::b:p::p, comp dmixed::b:p::p}, space :p:12:p}}, par b {comp textArea18::b:p::p, comp cmilkshake::b:p::p, comp dcmilkshake::b:p::p}, space s:::p, par b {comp textArea19::b:p::p, comp tea::b:p::p, comp dtea::b:p::p}}, par b:l {comp textArea14::b:p::p, comp apple::b:p::p, comp dapple::b:p::p}}, space :p:12:p}}"
+				"$horizontalGroup": "par l {seq l {space :p:12:p, par l {seq l {par l {seq l {comp textArea6:::p:227:p, space :::p, comp Capuccino:::p:85:p, space :::p, comp dcappuccino:::p:85:p}, seq l {comp textArea5:::p:227:p, space :::p, comp Hamericano:::p:85:p, space :::p, comp dhamericano:::p:85:p}, seq l {comp textArea9:::p:227:p, space :::p, comp latte:::p:85:p, space :::p, comp dlatte:::p:85:p, space u:::p, comp textArea29:::p:198:p}}, space :::p, comp mavro:::p:80:p, space :::p, comp dmavro:::p:90:p}, seq {comp textArea22:::p:227:p, space :::p, comp esspresso:::p:80:p, space :::p, comp desspresso:::p:90:p, space u:::p, par l {par t {comp textArea25:::p:198:p, comp textArea26:::p:198:p}, comp textArea27::t:p:198:p}, space :::p, par l {seq {comp rodakino:::p:80:p, space :::p, comp drodakino:::p:90:p}, seq {comp green:::p:80:p, space :::p, comp dgreen:::p:90:p}, seq l {comp lemoni:::p:80:p, space :::p, comp dlemoni:::p:90:p}}}}, space :391:872:x}, seq l {space :::p, par l {seq {par l {comp textArea28:::p:421:p, comp textArea4::l:p:417:p}, par l {seq {par l {seq l {space :p:2:p, comp textArea11:::p:381:p}, seq l {space :p:6:p, comp textArea31:::p:421:p, space :::p, par l {comp Takeaway:::p:142:p, comp Delivery:::p:142:p, comp summ::l:p:284:p, seq l {comp textArea16:::p::p, space :p::p, comp textArea2:::p:284:p}, comp scrollPane1::l:p:284:p, comp textArea13::l:p:284:p}}}, space :0:535:x}, seq t {space :::x, par l {comp dvmilkshake::t:p:113:p, comp dtea::t:p:113:p, comp dcmilkshake::t:p:113:p}}}}, seq {par l {seq l {par l {seq {comp textArea3:::p:229:p, space :::p, comp Americano:::p:86:p, space :::p, comp damericano:::p:88:p, space s:::p, comp textArea15:::p:186:p, space :::p, comp mixed:::p:85:p}, seq {par l {seq l {comp textArea7:::p:229:p, space :::p, comp Fcappuccino:::p:86:p, space :::p, comp dfcappuccino:::p:88:p, space s:::p, comp textArea10:::p:187:p}, seq l {comp textArea8:::p:229:p, space :::p, comp frappe:::p:86:p, space :::p, comp dfrappe:::p:88:p, space :p:18:p, comp textArea14:::p:186:p}}, space :::p, par l:::p {comp apple::::84:x, comp macchiato::::84:x}}}, space :::p, par l {comp dmixed::l:p:84:p, comp dmacchiato::l:p:84:p, comp dapple:::p:84:p}}, seq l {comp textArea1:::p:229:p, space :::p, comp frs:::p:86:p, space :::p, comp delete:::p:88:p, space s:::p, comp textArea12:::p:186:p, space :::p, comp orange:::p:85:p, space :::p, comp dorange:::p:86:p}, seq {par l {seq {comp textArea20:::p:229:p, space :::p, comp iced:::p:86:p, space :0:0:p, comp diced:::p:88:p}, comp textArea24::l:p:421:p}, space u:::p, par l {comp textArea23:::p:380:p, seq {comp textArea21:::p:186:p, space :::p, comp peponi:::p:85:p, space :::p, comp dpeponi:::p:84:p}, seq l {comp textArea30:::p:421:p, space :::p, comp Checkout:::p:234:p}}}}, space :0:585:x}}}}"
+				"$verticalGroup": "par l {seq {par l {seq {space :::p, par b {comp textArea11::b:p:46:p, comp textArea4::b:p:46:p}, space s:::p, par b {comp textArea28::b:p::p, comp textArea31::b:p::p}}, seq l {space :p:84:p, comp Takeaway:::p:38:p}}, par l {seq {space :::p, par b {comp frs::b:p::p, comp textArea1::b:p:29:p, comp delete::b:p::p, comp textArea12::b:p:27:p, comp orange::b:p::p, comp dorange::b:p::p}}, seq l {space :p:16:p, comp Delivery:::p:41:p}}, space :p:10:p, par l {seq {par l {par b {comp dfcappuccino::b:p::p, comp Fcappuccino::b:p::p, comp textArea10::b:p:24:p, comp macchiato::b:p::p, comp dmacchiato::b:p:24:p}, comp textArea7::l:p:30:p}, space s:::p, par t {par b {comp frappe::b:p::p, comp dfrappe::b:p::p}, comp textArea8:::p:30:p}, space :p:21:p, par b {comp textArea3::b:p:29:p, comp Americano::b:p::p, comp damericano::b:p::p, comp textArea15::b:p:24:p, comp mixed::b:p::p, comp dmixed::b:p::p}, space :p:21:p, par l {par b {comp iced::b:p::p, comp diced::b:p::p}, comp textArea20::l:p:29:p, par b {comp dpeponi::b:p::p, comp peponi::b:p::p, comp textArea21::b:p:24:p}}, space s:::p, comp textArea23:::p::p, space :::x, par b {comp textArea30::b:p::p, comp textArea24::b:p::p}, space :::x, par b {comp textArea25::b:p:34:p, comp green::b:p::p, comp dgreen::b:p::p, comp desspresso::b:p::p, comp esspresso::b:p::p, comp textArea22::b:p:34:p}}, seq {par l {comp textArea16::l:p::p, seq l {space :p:8:p, comp textArea2:::p:31:p}}, space :::p, par t {par b {comp textArea14::b:p:24:p, comp apple::b:p::p, comp dapple::b:::p}, seq {comp scrollPane1:::p:57:p, space :5:5:p}}, comp textArea13:::p:32:p, space :p:5:p, comp summ:::p::p, space s:::p, comp Checkout:::p:64:p, space :0:0:x}}, par l {seq l {par b {comp textArea6::b:p:29:p, comp Capuccino::b:p::p, comp dcappuccino::b:p::p}, space :p:9:p, par b {comp textArea5::b:p:33:p, comp Hamericano::b:p::p, comp dhamericano::b:p::p}, space u:::p, par b {comp textArea9::b:p:28:p, comp latte::b:p::p, comp dlatte::b:p::p, comp mavro::b:p::p, comp dmavro::b:p::p}, space :::x, comp dvmilkshake:::p::p, space :::x, comp dcmilkshake:::p::p, space :::p, comp dtea:::p::p, space :p:42:p}, seq l {par b {comp rodakino::b:p::p, comp drodakino::b:p::p, comp textArea26::b:p:29:p}, space :p:9:p, par b {comp lemoni::b:p::p, comp dlemoni::b:p::p, comp textArea27::b:p:33:p}, space :::p, comp textArea29:::p:33:p}}}}"
+				"honorsVisibility": false
 			} ) {
 				name: "Panel"
-				"background": new java.awt.Color( 255, 51, 0, 255 )
+				"background": new java.awt.Color( 51, 51, 51, 255 )
+				"autoscrolls": true
+				"componentOrientation": sfield java.awt.ComponentOrientation LEFT_TO_RIGHT
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "frs"
 					"text": "Order"
-					"background": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+					"background": new java.awt.Color( 255, 255, 255, 255 )
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "frsActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "Americano"
 					"text": "Order"
-					"background": #Color0
+					"background": &Color0 new java.awt.Color( 255, 255, 255, 255 )
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AmericanoActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
@@ -50,18 +55,6 @@ new FormModel {
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "frappeActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
-					name: "milskhake"
-					"text": "Order"
-					"background": #Color1
-					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "milskhakeActionPerformed", true ) )
-				} )
-				add( new FormComponent( "javax.swing.JButton" ) {
-					name: "tea"
-					"text": "Order"
-					"background": #Color1
-					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "teaActionPerformed", true ) )
-				} )
-				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "Hamericano"
 					"text": "Order"
 					"background": #Color0
@@ -69,79 +62,101 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JTextField" ) {
 					name: "summ"
-				} )
-				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
-					name: "scrollPane1"
-					add( new FormComponent( "javax.swing.JTextArea" ) {
-						name: "informations"
-					} )
+					"border": &MatteBorder0 new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+					"background": new java.awt.Color( 51, 51, 51, 255 )
+					"font": new java.awt.Font( "Segoe UI", 1, 16 )
+					"foreground": sfield java.awt.Color white
+					"caretColor": sfield java.awt.Color white
 				} )
 				add( new FormComponent( "javax.swing.JCheckBox" ) {
 					name: "Delivery"
 					"text": "Delivery"
+					"background": new java.awt.Color( 176, 82, 82, 255 )
+					"border": #MatteBorder0
+					"font": &Font0 new java.awt.Font( "Segoe UI", 1, 20 )
 					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "DeliveryItemStateChanged", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
-					name: "button1"
+					name: "Checkout"
 					"text": "Checkout"
-					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CheckoutAction", true ) )
+					"background": new java.awt.Color( 176, 82, 82, 255 )
+					"font": new java.awt.Font( "Segoe UI", 1, 20 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CheckoutActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "delete"
 					"text": "Remove"
 					"background": #Color0
-					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea1"
 					"text": "Freddo Espresso(€1.80)"
+					"font": new java.awt.Font( "Monospaced", 1, 15 )
+					"foreground": sfield java.awt.Color white
+					"background": new java.awt.Color( 176, 82, 82, 255 )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea2"
-					"text": "MY ORDER:"
+					"text": "       MY ORDER:"
+					"font": new java.awt.Font( "Monospaced", 1, 20 )
+					"border": #MatteBorder0
+					"background": new java.awt.Color( 176, 82, 82, 255 )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea3"
 					"text": "Iced Americano(€1.50)"
+					"background": new java.awt.Color( 176, 82, 82, 255 )
+					"font": new java.awt.Font( "Monospaced", 1, 15 )
+					"foreground": sfield java.awt.Color white
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "damericano"
 					"text": "Remove"
 					"background": #Color0
-					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "damericanoActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea4"
-					"text": "COFFEES/SHAKES/TEAS"
+					"text": "       C O F F E E S                "
+					"foreground": sfield java.awt.Color darkGray
+					"lineWrap": true
+					"font": &Font1 new java.awt.Font( "Monospaced", 1, 27 )
+					"background": &Color3 new java.awt.Color( 176, 82, 82, 255 )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea5"
 					"text": "Hot Americano(€1.80)"
+					"background": &Color4 new java.awt.Color( 176, 82, 82, 255 )
+					"foreground": sfield java.awt.Color white
+					"font": &Font2 new java.awt.Font( "Monospaced", 1, 15 )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "dhamericano"
 					"text": "Remove"
 					"background": #Color0
-					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "hamericanoActionPerformed", true ) )
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dhamericanoActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea6"
 					"text": "Cappuccino(€2.50)"
+					"font": &Font3 new java.awt.Font( "Monospaced", 1, 15 )
+					"foreground": sfield java.awt.Color white
+					"background": &Color5 new java.awt.Color( 176, 82, 82, 255 )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "dcappuccino"
 					"text": "Remove"
 					"background": #Color1
-					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dcappuccinoActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea7"
 					"text": "Freddo Cappuccino(€3.00)"
+					"background": new java.awt.Color( 176, 82, 82, 255 )
+					"foreground": sfield java.awt.Color white
+					"font": new java.awt.Font( "Monospaced", 1, 15 )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "Fcappuccino"
@@ -153,23 +168,27 @@ new FormModel {
 					name: "dfcappuccino"
 					"text": "Remove"
 					"background": #Color1
-					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dfcappuccinoActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea8"
 					"text": "Frappe(€1.80)"
+					"font": new java.awt.Font( "Monospaced", 1, 15 )
+					"foreground": sfield java.awt.Color white
+					"background": new java.awt.Color( 176, 82, 82, 255 )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "dfrappe"
 					"text": "Remove"
 					"background": #Color1
-					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dfrappeActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea9"
 					"text": "Latte(€3.50)"
+					"background": new java.awt.Color( 176, 82, 82, 255 )
+					"foreground": sfield java.awt.Color white
+					"font": new java.awt.Font( "Monospaced", 1, 15 )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "latte"
@@ -181,12 +200,14 @@ new FormModel {
 					name: "dlatte"
 					"text": "Remove"
 					"background": #Color1
-					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dlatteActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea10"
-					"text": "Macchiato(€3.50)"
+					"text": "Carrot Juice(€3.50)"
+					"background": &Color6 new java.awt.Color( 176, 82, 82, 255 )
+					"foreground": sfield java.awt.Color white
+					"font": &Font4 new java.awt.Font( "Monospaced", 1, 15 )
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "macchiato"
@@ -198,43 +219,41 @@ new FormModel {
 					name: "dmacchiato"
 					"text": "Remove"
 					"background": #Color1
-					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dmacchiatoActionPerformed", true ) )
-				} )
-				add( new FormComponent( "javax.swing.JTextArea" ) {
-					name: "textArea11"
-					"text": "JUICES"
-					"cursor": new java.awt.Cursor( 2 )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea12"
 					"text": "Orange juice(€3.00)"
-				} )
-				add( new FormComponent( "javax.swing.JButton" ) {
-					name: "dorange"
-					"text": "Remove"
-					"background": #Color2
-					"visible": false
-					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dorangeActionPerformed", true ) )
+					"background": #Color6
+					"foreground": sfield java.awt.Color white
+					"font": #Font4
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea13"
-					"text": "Total:"
+					"text": "         Total:"
+					"border": #MatteBorder0
+					"font": new java.awt.Font( "Monospaced", 1, 20 )
+					"background": new java.awt.Color( 176, 82, 82, 255 )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea14"
 					"text": "Apple juice(€1.80)"
+					"background": #Color6
+					"foreground": sfield java.awt.Color white
+					"font": #Font4
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "dapple"
 					"text": "Remove"
 					"background": #Color2
-					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dappleActionPerformed", true ) )
 				} )
 				add( new FormComponent( "javax.swing.JTextArea" ) {
 					name: "textArea15"
 					"text": "Mixed juice(€2.00)"
+					"background": #Color6
+					"foreground": sfield java.awt.Color white
+					"font": #Font4
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "mixed"
@@ -246,12 +265,7 @@ new FormModel {
 					name: "dmixed"
 					"text": "Remove"
 					"background": #Color2
-					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dmixedActionPerformed", true ) )
-				} )
-				add( new FormComponent( "javax.swing.JTextArea" ) {
-					name: "textArea17"
-					"text": "Milkshake Vanilla(€2.50)"
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "dvmilkshake"
@@ -260,26 +274,12 @@ new FormModel {
 					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dvmilkshakeActionPerformed", true ) )
 				} )
-				add( new FormComponent( "javax.swing.JTextArea" ) {
-					name: "textArea18"
-					"text": "Milkshake Chocolate(€2.50)"
-				} )
-				add( new FormComponent( "javax.swing.JButton" ) {
-					name: "cmilkshake"
-					"text": "Order"
-					"background": #Color1
-					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cmilkshakeActionPerformed", true ) )
-				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "dcmilkshake"
 					"text": "Remove"
 					"background": #Color1
 					"visible": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dcmilkshakeActionPerformed", true ) )
-				} )
-				add( new FormComponent( "javax.swing.JTextArea" ) {
-					name: "textArea19"
-					"text": "Tea(€1.80)"
 				} )
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "dtea"
@@ -291,13 +291,210 @@ new FormModel {
 				add( new FormComponent( "javax.swing.JCheckBox" ) {
 					name: "Takeaway"
 					"text": "Takeaway"
+					"background": new java.awt.Color( 176, 82, 82, 255 )
+					"border": #MatteBorder0
+					"font": #Font0
 				} )
-			}, new FormLayoutConstraints( class java.lang.String ) {
-				"value": "North"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea20"
+					"text": "Iced Latte(€1.50)"
+					"font": new java.awt.Font( "Monospaced", 1, 15 )
+					"foreground": sfield java.awt.Color white
+					"background": new java.awt.Color( 176, 82, 82, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "iced"
+					"text": "Order"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AmericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "diced"
+					"text": "Remove"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "damericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea22"
+					"text": "Esspresso(€1.50)"
+					"background": &Color7 new java.awt.Color( 176, 82, 82, 255 )
+					"foreground": sfield java.awt.Color white
+					"font": &Font5 new java.awt.Font( "Monospaced", 1, 15 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "esspresso"
+					"text": "Order"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AmericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "desspresso"
+					"text": "Remove"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "damericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea24"
+					"text": "                          H O T"
+					"lineWrap": true
+					"font": &Font6 new java.awt.Font( "Microsoft YaHei UI", 1, 23 )
+					"foreground": sfield java.awt.Color white
+					"background": &Color8 new java.awt.Color( 51, 51, 51, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea11"
+					"text": "      J U I C E S"
+					"foreground": sfield java.awt.Color darkGray
+					"lineWrap": true
+					"font": #Font1
+					"background": new java.awt.Color( 176, 82, 82, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "dorange"
+					"text": "Remove"
+					"background": #Color2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dorangeActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea21"
+					"text": "Peponi(€2.00)"
+					"background": #Color6
+					"foreground": sfield java.awt.Color white
+					"font": #Font4
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "peponi"
+					"text": "Order"
+					"background": #Color2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mixedActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "dpeponi"
+					"text": "Remove"
+					"background": #Color2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dmixedActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea23"
+					"text": "         T E A"
+					"foreground": sfield java.awt.Color darkGray
+					"lineWrap": true
+					"font": #Font1
+					"background": #Color3
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea25"
+					"text": "Green Tea(€1.50)"
+					"background": #Color7
+					"foreground": sfield java.awt.Color white
+					"font": #Font5
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea26"
+					"text": "Peach Tea(€2.50)"
+					"font": #Font3
+					"foreground": sfield java.awt.Color white
+					"background": #Color5
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea27"
+					"text": "Lemon Tea(€1.80)"
+					"background": #Color4
+					"foreground": sfield java.awt.Color white
+					"font": #Font2
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea29"
+					"text": "Black Tea(€1.80)"
+					"background": #Color4
+					"foreground": sfield java.awt.Color white
+					"font": #Font2
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "green"
+					"text": "Order"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AmericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "dgreen"
+					"text": "Remove"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "damericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "rodakino"
+					"text": "Order"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AmericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "drodakino"
+					"text": "Remove"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "damericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "lemoni"
+					"text": "Order"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AmericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "dlemoni"
+					"text": "Remove"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "damericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "mavro"
+					"text": "Order"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AmericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "dmavro"
+					"text": "Remove"
+					"background": #Color0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "damericanoActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea28"
+					"text": "                          COLD"
+					"lineWrap": true
+					"font": #Font6
+					"foreground": sfield java.awt.Color white
+					"background": #Color8
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea30"
+					"text": "               H O T / C O L D"
+					"lineWrap": true
+					"font": #Font6
+					"foreground": sfield java.awt.Color white
+					"background": #Color8
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea31"
+					"text": "                F R E S H"
+					"lineWrap": true
+					"font": #Font6
+					"foreground": sfield java.awt.Color white
+					"background": #Color8
+				} )
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea16"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "informations"
+					} )
+				} )
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 30, 5 )
-			"size": new java.awt.Dimension( 730, 675 )
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 720, 590 )
 		} )
 	}
 }
